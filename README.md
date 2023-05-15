@@ -120,3 +120,109 @@ class HelloWorld {
 java -cp /tmp/A4X2pour0i HelloWorld
 -9
 
+// chapter strings 
+
+// strings chapter excercise solutions
+class HelloWorld {
+    public static void main(String[] args) {
+        String name= "SHAIKH";
+        //System.out.println(name.length());
+         //System.out.println(name.toLowerCase());
+          //System.out.println(name.toUpperCase());
+           //System.out.println(name.replace('H','B'));
+            //System.out.println(name.repalce("SHA","BCD"));
+            // System.out.println(name.startsWith("SHA"));
+            // System.out.println(name.endsWith("LL"));
+             //System.out.println(name.equals("SHAIKH"));
+              //System.out.println(name.equalsIgnoreCase("shaikh"));
+            
+    }
+}
+
+  //question ( write a java program to convert a string to lower case)
+  
+  class HelloWorld {
+    public static void main(String[] args) {
+        String name="SHAIKH SHAZEB IS A CODER ";
+        System.out.println(name.toLowerCase());
+    }
+}
+
+//output
+java -cp /tmp/l8OhvXyV3d HelloWorld
+shaikh shazeb is a coder 
+
+//question( space replace with under score) 
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String text="SHAIKH SHAZEB IS A CODER ";
+        text=text.repalce(" ","_");
+        System.out.println(text);
+    }
+}
+//output 
+ERROR!
+javac /tmp/l8OhvXyV3d/HelloWorld.java
+/tmp/l8OhvXyV3d/HelloWorld.java:7: error: cannot find symbol
+text=text.repalce(" ","_");
+^
+symbol:   method repalce(String,String)
+location: variable text of type String
+1 error
+
+//question(// write a java program to replace the number )
+
+// space replace with under score 
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String letter="DEAR SHAZEB , THANKS A LOT";
+        letter = letter.replace("SHAZEB","SAQIB");
+        System.out.println(letter);
+    }
+}
+
+//output
+
+java -cp /tmp/l8OhvXyV3d HelloWorld
+DEAR SAQIB , THANKS A LOT 
+
+//question (WAJP to detect double spaces and tripple spaaces)
+
+// space replace with under score 
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String name="SHAIKH SAHZEB  SHAMSHIR";
+        System.out.println(name.indexOf("  "));
+        System.out.println(name.indexOf("   "));
+        
+    }java -cp /tmp/l8OhvXyV3d HelloWorld
+13-1
+
+}
+
+//output
+
+//question(WAJP using escape sequence)
+
+// space replace with under score 
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String name="DEAR SHAZEB,\n\t THIS JAVA COURSER IS NICE,\n\t THANKS Alot";
+        System.out.println(name);
+    }
+}
+
+//out put
+
+java -cp /tmp/l8OhvXyV3d HelloWorld
+DEAR SHAZEB,
+	 THIS JAVA COURSER IS NICE,
+	 THANKS Alot
+
+
+java -cp /tmp/l8OhvXyV3d HelloWorld
+13-1
